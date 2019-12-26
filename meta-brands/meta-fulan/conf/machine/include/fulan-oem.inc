@@ -138,6 +138,8 @@ PREFERRED_VERSION_rt8812au = "4.3.14"
 PREFERRED_VERSION_mpd = "0.20.22"
 # PREFERRED_PROVIDER_virtual/egl = "libstgles"
 # PREFERRED_PROVIDER_virtual/libgles1 = "libstgles"
+PREFERRED_VERSION_samba = "3.6.25"
+
 
 SERIAL_CONSOLE = "115200 ttyAS0"
 
