@@ -214,6 +214,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += " \
     stlirc \
     stinit \
     fulan-dvb-modules-${MACHINE} \
+    mountspark \
     mtd-utils-jffs2 \
     "
 
