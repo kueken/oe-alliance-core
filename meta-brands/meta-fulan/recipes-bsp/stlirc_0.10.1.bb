@@ -47,7 +47,7 @@ PACKAGECONFIG ?= " \
 "
 CACHED_CONFIGUREVARS = "HAVE_WORKING_POLL=yes"
 
-#EXTRA_OEMAKE = 'SUBDIRS="lib daemons tools"'
+EXTRA_OEMAKE = 'SUBDIRS="lib daemons tools"'
 # Ensure python-pkg/VERSION exists
 do_configure_append() {
     cp ${S}/VERSION ${S}/python-pkg/
