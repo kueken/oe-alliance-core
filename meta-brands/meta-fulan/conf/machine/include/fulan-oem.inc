@@ -127,18 +127,17 @@ KERNEL_MODULE_PACKAGE_SUFFIX = ""
 TARGET_ARCH = "sh4"
 DEFAULTTUNE = "sh4"
 
-GCCVERSION = "4.9.4"
+# GCCVERSION = "4.9.4"
 
-GLIBCVERSION = "2.23"
+# GLIBCVERSION = "2.23"
 OLDEST_KERNEL = "2.6.32"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-fulan"
 PREFERRED_VERSION_directfb = "1.7.7"
 PREFERRED_VERSION_rt8812au = "4.3.14"
 PREFERRED_VERSION_mpd = "0.20.22"
-
-PREFERRED_PROVIDER_virtual/egl = "libstgles"
-PREFERRED_PROVIDER_virtual/libgles1 = "libstgles"
+# PREFERRED_PROVIDER_virtual/egl = "libstgles"
+# PREFERRED_PROVIDER_virtual/libgles1 = "libstgles"
 
 SERIAL_CONSOLE = "115200 ttyAS0"
 
@@ -226,8 +225,6 @@ MACHINE_EXTRA_RRECOMMENDS += " \
 EXTRA_IMAGEDEPENDS += "\
     enigma2-plugin-systemplugins-vfdcontrol \
     libpcre \
-    libstgles \
-    directfb-stgfx2 \
     "
 
 MACHINE_EXTRA_RDEPENDS += "\
