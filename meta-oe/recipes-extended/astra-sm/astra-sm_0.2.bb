@@ -4,31 +4,34 @@ DESCRIPTION = "Astra (Advanced Streamer) is a professional software to organize 
 SECTION = "multimedia"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
-SRCREV = "1c45755761e10f96318f2fffb29bb5466e00bcfc"
-DEPENDS = "libaio"
+SRCREV = "44bcd2852b7f315233267f639730e0e21b9b6c22"
+DEPENDS = "openssl libdvbcsa libaio"
 
-SRC_URI = "git://gitlab.com/berdyansk/astra-sm.git;protocol=http \
-	file://version.patch \
-	file://undef_dvb_net.patch \
-	file://astra-sm \
-	file://astra.conf \
-	"
+SRC_URI = "git://github.com/OpenVisionE2/astra-sm.git;branch=staging;;protocol=http"
 
-S = "${WORKDIR}/git"
+inherit gitpkgv autotools-brokensep pkgconfig update-rc.d gettext
 
-inherit autotools-brokensep pkgconfig gettext
+PV = "0.2+git${SRCPV}"
+PKGV = "0.2+git${GITPKGV}"
+
+S="${WORKDIR}/git"
 
 do_install_append() {
-	install -m 0755 ${S}/tests/t2mi_decap ${D}${bindir}/t2mi_decap
-	install -d ${D}/etc/init.d
-	install -m 0755 ${WORKDIR}/astra-sm ${D}/etc/init.d/
-	install -m 0644 ${WORKDIR}/astra.conf ${D}/etc/astra/
+	install -d ${D}${bindir}
+	install -m 0755 ${S}/src/tests/t2mi_decap ${D}${bindir}/
+	install -d ${D}${sysconfdir}/init.d/astra
+	install -D -m 755 ${S}/astra-sm ${D}${sysconfdir}/init.d/astra/
+	install -D -m 644 ${S}/astra-sm.lua ${D}${sysconfdir}/astra/
+	install -D -m 644 ${S}/astra-sm.conf ${D}${sysconfdir}/astra/
 }
 
-FILES_${PN} += "/etc/init.d/"
+FILES_${PN} += "${sysconfdir}/init.d/"
 FILES_${PN}-dev += "${datadir}"
 
 INITSCRIPT_NAME = "astra-sm"
 INITSCRIPT_PARAMS = "defaults"
 
-inherit update-rc.d
+CFLAGS_FOR_BUILD += "-std=c99"
+
+CONFFILES += "${sysconfdir}/astra/astra-sm.lua"
+CONFFILES += "${sysconfdir}/astra/astra-sm.conf"
