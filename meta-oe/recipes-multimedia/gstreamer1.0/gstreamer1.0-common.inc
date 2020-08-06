@@ -1,27 +1,16 @@
-GST_VERSION_FULL = "1.17.0.1"
+GST_VERSION_FULL = "1.17.2.1"
 
-inherit gitpkgv
+inherit gitpkgv meson gettext
 
 PV = "${GST_VERSION_FULL}+git${SRCPV}"
 PKGV = "${GST_VERSION_FULL}+git${GITPKGV}"
 
-SRCREV_gst = "e17bde51b3bcbebe84b381846607bed0f7b7130a"
-SRCREV_gst_common = "88e512ca7197a45c4114f7fa993108f23245bf50"
-SRCREV_gst_libav = "40f5953828c4d82b39890ad4da4603693eff8af7"
+SRCREV_gst = "e243e152f06d376c429c40b017e3e1e13bc09af6"
+SRCREV_gst_libav = "8d3c0a1f8a8fa6411c3a4f50a06cd077118e7883"
 
-SRCREV_gst_plugins_bad = "f2c75d548d1ab02e7015adb55cd9db0e6e9282af"
-SRCREV_gst_plugins_base = "dd556ccf3d5b05c0e0b03398b62617e311797085"
-SRCREV_gst_plugins_good = "46989dca9665f5a1b28a83f68415c91fee7bc051"
-SRCREV_gst_plugins_ugly = "3f24460e3760fec8b9c82e16196f346876581372"
-
-SRCREV_ffmpeg = "61853f7503530ae11ed407a80463dc7ac2e7362d"
-
-SRC_URI_append = " git://gitlab.freedesktop.org/gstreamer/common;protocol=https;branch=master;destsuffix=git/common;name=gst_common"
+SRCREV_gst_plugins_bad = "e70ec38000404de1c871d835a6e35dbfcc47884d"
+SRCREV_gst_plugins_base = "dd5f7f1bf97eaec3d967b3fe670e3e600088904a"
+SRCREV_gst_plugins_good = "28a616f6933f11cab372cf4e1bb143b99c89bd0c"
+SRCREV_gst_plugins_ugly = "995a135df6276a060ce16078fd6db54668163199"
 
 S = "${WORKDIR}/git"
-
-do_configure_prepend() {
-    cd ${S}
-    ./autogen.sh --noconfigure
-    cd ${B}
-}
