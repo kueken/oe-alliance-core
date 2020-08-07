@@ -16,7 +16,7 @@ DEPENDS += " \
             rapidjson \
             crossguid \
             libdvdnav libdvdcss libdvdread \
-            ${@bb.utils.contains('PREFERRED_VERSION_ffmpeg', '3.4.2', 'ffmpeg-kodi-18', 'ffmpeg', d)} \
+            ffmpeg \
             git-native \
             curl-native \
             gperf-native \
