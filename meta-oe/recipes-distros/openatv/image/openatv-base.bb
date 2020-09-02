@@ -29,11 +29,11 @@ RDEPENDS_${PN} = "\
     ${@bb.utils.contains("TUNE_FEATURES", "armv", "glibc-compat", "", d)} \
     ${@bb.utils.contains("MACHINE_FEATURES", "dreamboxv1", "", "ofgwrite", d)} \
     ${@bb.utils.contains("MACHINE_FEATURES", "smallflash", "", " \
-        iproute2 \
-        tar \
+    iproute2 \
+    tar \
     ", d)} \
     ${@bb.utils.contains_any("FLASHSIZE", "64 96", "", " \
-        ntfs-3g \
-        unrar \
+    ntfs-3g \
+    unrar \
     ", d)} \
     "
