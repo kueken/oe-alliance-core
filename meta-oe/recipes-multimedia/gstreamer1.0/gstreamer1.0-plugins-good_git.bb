@@ -51,6 +51,8 @@ PACKAGECONFIG[x11]        = "-Dximagesrc=enabled -Dximagesrc-xfixes=enabled -Dxi
 # This is better done in a separate qt5 layer (which then should add a "qt5" packageconfig
 # in a gstreamer1.0-plugins-good bbappend).
 
+EXTRA_OEMESON_remove += " --disable-qt"
+
 EXTRA_OEMESON += " \
     -Doss=enabled \
     -Daalib=disabled \
