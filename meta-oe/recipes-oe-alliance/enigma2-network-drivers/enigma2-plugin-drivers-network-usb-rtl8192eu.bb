@@ -1,4 +1,4 @@
-SUMMARY = "Single-Chip IEEE 802.11b/g/n 2T2R WLAN Controller with USB 2.0 Interface"
+SUMMARY = "WiFi devices for Realtek 8192EU chipsets."
 inherit allarch
 
 require conf/license/license-gplv2.inc
