@@ -22,6 +22,7 @@ ${@bb.utils.contains('MACHINEBUILD', 'dinobotu55', 'DINOBOT U55' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'dinoboth265', 'DINOBOT H265' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'hitube4k', '4K' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'iziboxone4k', 'ONE 4K' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'iziboxelite4k', 'Elite 4K' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'iziboxx3', 'X3' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'axashistwin', 'HIS Twin' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'axashisc4k', 'HIS C 4K' , '', d)}\
@@ -35,7 +36,7 @@ ${@bb.utils.contains('MACHINEBUILD', 'turing', 'TURING' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'arivatwin', 'ARIVA ATV TT' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'arivacombo', 'ARIVA ATV COMBO' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'vipertwin', 'Viper Twin E2' , '', d)}\
-${@bb.utils.contains('MACHINEBUILD', 'vipers', 'Viper S' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'vipersingle', 'Viper Single' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'viper4kv20', 'Viper 4K V20' , '', d)}\
 "
 
@@ -58,6 +59,7 @@ ${@bb.utils.contains('MACHINEBUILD', 'dinobotu55', 'Vivant' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'dinoboth265', 'Vivant' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'hitube4k', 'HITUBE' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'iziboxone4k', 'IZIBOX' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'iziboxelite4k', 'IZIBOX' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'iziboxx3', 'IZIBOX' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'axashistwin', 'AXAS' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'axashisc4k', 'AXAS' , '', d)}\
@@ -71,7 +73,7 @@ ${@bb.utils.contains('MACHINEBUILD', 'turing', 'Atto.TV' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'arivatwin', 'Ferguson' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'arivacombo', 'Ferguson' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'vipertwin', 'AMIKO' , '', d)}\
-${@bb.utils.contains('MACHINEBUILD', 'viperts', 'AMIKO' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'vipersingle', 'AMIKO' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'viper4kv20', 'AMIKO' , '', d)}\
 "
 
@@ -94,6 +96,7 @@ ${@bb.utils.contains('MACHINEBUILD', 'dinobotu55', 'mtd10' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'dinoboth265', 'mtd8' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'hitube4k', 'mtd10' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'iziboxone4k', 'mtd10' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'iziboxelite4k', 'mmcblk0p9' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'iziboxx3', 'mtd10' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'axashistwin', 'mtd8' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'axashisc4k', 'mmcblk0p9' , '', d)}\
@@ -107,7 +110,7 @@ ${@bb.utils.contains('MACHINEBUILD', 'turing', 'mtd8' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'arivatwin', 'mmcblk0p10' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'arivacombo', 'mmcblk0p10' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'vipertwin', 'mtd8' , '', d)}\
-${@bb.utils.contains('MACHINEBUILD', 'vipers', 'mtd8' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'vipersingle', 'mtd8' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'viper4kv20', 'mmcblk0p9' , '', d)}\
 "
 
@@ -130,6 +133,7 @@ ${@bb.utils.contains('MACHINEBUILD', 'dinobotu55', 'mtd11' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'dinoboth265', 'mtd9' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'hitube4k', 'mtd11' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'iziboxone4k', 'mtd11' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'iziboxelite4k', 'mmcblk0p10' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'iziboxx3', 'mtd11' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'axashistwin', 'mtd9' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'axashisc4k', 'mmcblk0p10' , '', d)}\
@@ -143,7 +147,7 @@ ${@bb.utils.contains('MACHINEBUILD', 'turing', 'mtd9' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'arivatwin', 'mmcblk0p13' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'arivacombo', 'mmcblk0p13' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'vipertwin', 'mtd9' , '', d)}\
-${@bb.utils.contains('MACHINEBUILD', 'vipers', 'mtd9' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'vipersingle', 'mtd9' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'viper4kv20', 'mmcblk0p10' , '', d)}\
 "
 
@@ -166,6 +170,7 @@ ${@bb.utils.contains('MACHINEBUILD', 'dinobotu55', 'no' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'dinoboth265', 'no' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'hitube4k', 'no' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'iziboxone4k', 'no' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'iziboxelite4k', 'no' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'iziboxx3', 'no' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'axashistwin', 'no' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'axashisc4k', 'no' , '', d)}\
@@ -179,7 +184,7 @@ ${@bb.utils.contains('MACHINEBUILD', 'turing', 'no' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'arivatwin', 'no' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'arivacombo', 'no' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'vipertwin', 'no' , '', d)}\
-${@bb.utils.contains('MACHINEBUILD', 'vipers', 'no' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'vipersingle', 'no' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'viper4kv20', 'no' , '', d)}\
 "
 
@@ -202,6 +207,7 @@ ${@bb.utils.contains('MACHINEBUILD', 'dinobotu55', 'dinobot/${MACHINE}' , '', d)
 ${@bb.utils.contains('MACHINEBUILD', 'dinoboth265', 'dinobot/${MACHINE}' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'hitube4k', 'dinobot/${MACHINE}' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'iziboxone4k', 'dinobot/${MACHINE}' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'iziboxelite4k', 'izibox/${MACHINE}' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'iziboxx3', 'izibox/x3' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'axashistwin', 'axas/axashistwin' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'axashisc4k', 'axas/axasc4k' , '', d)}\
@@ -215,7 +221,7 @@ ${@bb.utils.contains('MACHINEBUILD', 'turing', 'atto/turing' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'arivatwin', 'e2/update' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'arivacombo', 'e2/update' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'vipertwin', 'dinobot/${MACHINE}' , '', d)}\
-${@bb.utils.contains('MACHINEBUILD', 'vipers', 'amiko/${MACHINE}' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'vipersingle', 'amiko/${MACHINE}' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'viper4kv20', 'amiko/${MACHINE}' , '', d)}\
 "
 
